@@ -17,7 +17,10 @@ int main(int argc, char* argv[]) {
     int c = 3;
     printf("size of void *value: %ld\n", sizeof(void *));
     printf("size of struct: %ld\n", sizeof(struct list));
+    printf("size of struct: %ld\n", sizeof(struct list_tail));
     struct list_tail lt = {0, NULL};
+    printf("size of struct: %ld\n", sizeof(lt));
+    printf("size of struct: %ld\n", sizeof(int));
 
     list_insert(&lt, &a);
     printf("len: %d\n", lt.len);
