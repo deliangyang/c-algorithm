@@ -5,6 +5,8 @@
 #include <malloc.h>
 #include <stdio.h>
 
+#define STR(x) #x
+
 typedef struct tree node;
 
 struct tree {
@@ -79,4 +81,5 @@ int main(int argc, char* argv[]) {
     insert_val(tree, 12);
     print_sort_tree(tree);
     destory_tree(tree);
+    printf("str: %s", STR(asdfadf));
 }
